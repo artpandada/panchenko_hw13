@@ -8,14 +8,15 @@ function getPalindrom (number, step = 0){
                 steps: step
             };
         }
-        return palindrom(number + reverseNumber, step+1);
+        return getPalindrom(number + reverseNumber, step+1);
     }
     catch(e) {
         return "Переданное число не является палиндромом";
     }
 
-
 }
+
+console.log(getPalindrom(89));
 
 
 
